@@ -1,0 +1,23 @@
+import React, { useState } from 'react';
+import './App.css';
+
+function App() {
+  const [isBackgroundDark, setBackgroundDark] = useState(false);
+
+  const handleToggleBackground = () => {
+    setBackgroundDark(!isBackgroundDark);
+  };
+
+  return (
+    <div className={`App ${isBackgroundDark ? 'dark' : 'light'}`}>
+      <header className="App-header">
+        <h1>Background Toggling App</h1>
+        <button onClick={handleToggleBackground}>
+          Toggle Background Color
+        </button>
+      </header>
+    </div>
+  );
+}
+
+export default App;
