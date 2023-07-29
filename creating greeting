@@ -1,0 +1,12 @@
+import React from 'react';
+
+const GreetingCard = ({ name, greeting }) => {
+  return (
+    <div className="greeting-card">
+      <h2>{greeting}, {name}!</h2>
+      <p>Hope you have a wonderful day!</p>
+    </div>
+  );
+};
+
+export default GreetingCard;
